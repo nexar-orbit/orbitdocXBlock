@@ -1,4 +1,4 @@
-"""Setup for pdfXBlock."""
+"""Setup for orbitdocXBlock."""
 
 import os
 from setuptools import setup
@@ -15,19 +15,19 @@ def package_data(pkg, root):
 
 
 setup(
-    name='pdf-xblock',
+    name='orbitdoc-xblock',
     version='0.1',
-    description='This XBlock provides an easy way to embed a PDF.',
+    description='This XBlock enables an easy way to embed documents(.doc,.ppt,etc..)and allows to download them.',
     packages=[
-        'pdf',
+        'orbitdoc',
     ],
     install_requires=[
         'XBlock',
     ],
     entry_points={
         'xblock.v1': [
-            'pdf = pdf:pdfXBlock',
+            'orbitdoc = orbitdoc:orbitdocXBlock',
         ]
     },
-    package_data=package_data("pdf", "static"),
+    package_data=package_data("orbitdoc", "static"),
 )

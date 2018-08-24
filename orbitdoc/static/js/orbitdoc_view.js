@@ -1,5 +1,5 @@
-/* Javascript for pdfXBlock. */
-function pdfXBlockInitView(runtime, element) {
+/* Javascript for orbitdocXBlock. */
+function orbitdocXBlockInitView(runtime, element) {
     /* Weird behaviour :
      * In the LMS, element is the DOM container.
      * In the CMS, element is the jQuery object associated*
