@@ -23,9 +23,6 @@ class orbitdocXBlock(XBlock):
         help="This name appears in the horizontal navigation at the top of the page.")
 
     url = String(display_name="Doc URL",
-	    '''
-		TODO# The below URL to be replaced with valid document URL
-		'''
         default="http://tutorial.math.lamar.edu/pdf/Trig_Cheat_Sheet.pdf",
         scope=Scope.content,
         help="The URL for your document.")
