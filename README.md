@@ -3,9 +3,8 @@ orbitdocXBlock
 
 ### Description ###
 
-This XBlock provides an easy way to embed a Documents(.doc, .ppt, etc) and allows to download them.
-
-- Download button available
+This XBlock provides an easy way to embed documents(.doc, .ppt, etc) into a course and allows to download them.
+- Download button available to download the document
 
 
 ### Install / Update the XBlock ###
@@ -23,7 +22,7 @@ This XBlock provides an easy way to embed a Documents(.doc, .ppt, etc) and allow
 
 ### Reboot if something isn't right ###
 
-    sudo /edx/bin/supervisorctl -c /edx/etc/supervisord.conf restart edxapp:
+    sudo /edx/bin/supervisorctl restart all
 
 ### Activate the XBlock in your course ###
 Go to `Settings -> Advanced Settings` and set `advanced_modules` to `["orbitdoc"]`.
