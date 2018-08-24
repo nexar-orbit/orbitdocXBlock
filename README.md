@@ -20,6 +20,10 @@ This XBlock provides an easy way to embed documents(.doc, .ppt, etc) into a cour
     # Remove the installation files
     sudo rm -r orbitdocXBlock
 
+### Uninstall the XBlock ###
+	sudo -u edxapp /edx/bin/pip.edxapp uninstall orbitdoc-xblock
+
+	
 ### Reboot if something isn't right ###
 
     sudo /edx/bin/supervisorctl restart all
